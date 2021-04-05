@@ -1,4 +1,4 @@
-# Simple-CRUD
+# Simple-CRUD-MySQLiConnection
 Simple CRUD program (HTML, Bootstrap 5, PHP, MYSQLi Connection)
 
 Features :
