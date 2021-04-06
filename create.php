@@ -35,19 +35,19 @@ if (isset($_POST['submit'])) {
         <div class="row mb-3">
             <label for="data1" class="col-sm-2 col-form-label">Data 1</label>
             <div class="col-sm-10">
-                <input type="text" name="data1" id="data1" required autocomplete="off" class="form-control">
+                <input type="text" name="data1" id="data1" autocomplete="off" class="form-control">
             </div>
         </div>
         <div class="row mb-3">
             <label for="data2" class="col-sm-2 col-form-label">Data 2</label>
             <div class="col-sm-10">
-                <input type="text" name="data2" id="data2" required autocomplete="off" class="form-control">
+                <input type="text" name="data2" id="data2" autocomplete="off" class="form-control">
             </div>
         </div>
         <div class="row mb-3">
             <label for="data3" class="col-sm-2 col-form-label">Data 3</label>
             <div class="col-sm-10">
-                <input type="text" name="data3" id="data3" required autocomplete="off" class="form-control">
+                <input type="text" name="data3" id="data3" autocomplete="off" class="form-control">
             </div>
         </div>
         <div class="d-grid gap-2 col-4 mx-auto">
