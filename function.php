@@ -41,15 +41,11 @@ function update($data)
     }
     $currentData = read("SELECT * FROM crud WHERE id=$id")[0];
     $datas = read("SELECT * FROM crud");
-    // if ($currentData['data1'] == $data1 && $currentData['data2'] == $data2 && $currentData['data3'] == $data3) {
-    //     return true;
-    // } else {
     foreach ($datas as $data) {
         if ($data1 == $data['data1'] && $data2 == $data['data2'] && $data3 == $data['data3']) {
             return false;
         }
     }
-    // }
     mysqli_query($db, "UPDATE crud SET data1 = '$data1', data2 = '$data2', data3 = '$data3' WHERE id = $id;");
     return mysqli_affected_rows($db);
 }
