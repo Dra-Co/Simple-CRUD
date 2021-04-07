@@ -12,7 +12,7 @@ function create($data)
     }
     $datas = read("SELECT * FROM crud");
     foreach ($datas as $data) {
-        if ($data1 == $data['data1'] && $data2 == $data['data2'] && $data3 == $data['data3']) {
+        if (strtolower($data1) == strtolower($data['data1']) && strtolower($data2) == strtolower($data['data2']) && strtolower($data3) == strtolower($data['data3'])) {
             return false;
         }
     }
@@ -39,10 +39,9 @@ function update($data)
     if (empty($data1) || empty($data2) || empty($data3)) {
         return false;
     }
-    $currentData = read("SELECT * FROM crud WHERE id=$id")[0];
     $datas = read("SELECT * FROM crud");
     foreach ($datas as $data) {
-        if ($data1 == $data['data1'] && $data2 == $data['data2'] && $data3 == $data['data3']) {
+        if (strtolower($data1) == strtolower($data['data1']) && strtolower($data2) == strtolower($data['data2']) && strtolower($data3) == strtolower($data['data3'])) {
             return false;
         }
     }
